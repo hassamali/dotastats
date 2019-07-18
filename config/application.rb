@@ -6,6 +6,10 @@ require 'rails/all'
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
 
+#Timezone setup
+config.time_zone = 'Eastern Time (US & Canada)'
+config.active_record.default_timezone = :local # Or :utc
+
 module Dotastats
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.
